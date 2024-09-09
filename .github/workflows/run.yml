@@ -25,7 +25,7 @@ jobs:
 
       - run: sh ./run.sh
 
-      - run: ls ./files
+      - run: ls
 
       # prevents fatal: detected dubious ownership in repository at '/__w/ogr2ogr/ogr2ogr'
       - run: git config --global --add safe.directory /__w/ogr2ogr/ogr2ogr
