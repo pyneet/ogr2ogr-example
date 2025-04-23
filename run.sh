@@ -1,3 +1,3 @@
-curl --output data.geojson "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/USGS_Seismic_Data_v1/FeatureServer/0/query?f=geojson&where=1%3D1&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=mag%20DESC&outSR=4326&resultOffset=0&resultRecordCount=10000"
+curl --output data.geojson "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_Rail_Bus_WebMercator/MapServer/58/query?outFields=*&where=1%3D1&f=geojson"
 
-ogr2ogr data.parquet data.geojson
+ogr2ogr data_dc_metro.parquet data_dc_metro.geojson
